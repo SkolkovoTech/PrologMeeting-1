@@ -12,3 +12,10 @@ digit_sum(Number, Sum) :-
     NumberPart is Number div 10,
     digit_sum(NumberPart, SumPart),
     Sum is SumPart+Digit.
+
+/*от 1 до 10 a^2 + b^2 = c^2 */
+solve(A, B, C) :-
+    for(A, 1, 10),
+    for(B, 1, 10),
+    for(C, 1, 10),
+    A*A+B*B=:=C*C.

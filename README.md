@@ -21,4 +21,17 @@
 
 ## Установка Mercury
 
+- скачать архив исходников http://dl.mercurylang.org/index.html
+- разархивировать
+- зайти в папку
+- запустить `configure`
+- запустить `make`
+- запустить `make install`
+- проверить пути #          
+    PATH=/usr/local/mercury-14.01.1/bin
+    MANPATH=/usr/local/mercury-14.01.1/man
+    INFOPATH=/usr/local/mercury-14.01.1/info
+
+
 ## Hello World
+    mmc hello.m
