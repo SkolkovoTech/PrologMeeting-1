@@ -1,0 +1,3 @@
+Mercury/os/math_init.o: In function `mercury_init':
+math_init.c:(.text+0x43f): undefined reference to `<predicate 'main'/2 mode 0>'
+collect2: error: ld returned 1 exit status

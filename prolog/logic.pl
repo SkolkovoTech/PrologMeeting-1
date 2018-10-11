@@ -30,12 +30,13 @@ studied(petya,english).
 studied(vasya,german).
 studied(vasya,literature).
 
-/* Правила */
 studied_tech(X) :- studied(X, math).
 studied_tech(X) :- studied(X, compscience).
 studied_lang(X) :- studied(X,english).
 studied_lang(X) :- studied(X,german).
 
-speciality(X, tech_translator) :- studied_lang(X), studied_tech(X).
+/* Правила */
+/* Для любого X, если он принадлежит studied_lang и studied_tech */
+speciality(X, tech_translator) :- studied_lang(X), studied_tech(X). 
 speciality(X, programmer) :- studied(X, math), studied(X, compscience).
 speciality(X, lit_translator) :- studied_lang(X), studied(X, literature).
